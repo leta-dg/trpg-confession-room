@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[히코마] 고해의 방</title>
+    <style>
+        .style-01 {
+            box-sizing: content-box;
+        }
+
+        .style-02 {
+            box-sizing: content-box;
+            background: rgb(190, 190, 190);
+        }
+
+        .style-03 {
+            box-sizing: content-box;
+            background: rgb(190, 190, 190);
+            border: 2px solid black;
+            padding: 0px 3px;
+            font-weight: bold;
+            cursor: help;
+            font-size: 1.1em;
+            display: inline-block;
+            min-width: 1.5em;
+            text-align: center;
+        }
+
+        .style-04 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(119, 226, 245);
+            text-decoration: none;
+            border-left: 10px solid rgb(254, 199, 1);
+            font-size: 13px;
+            padding: 3px 5px;
+        }
+
+        .style-05 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(119, 226, 245);
+            text-decoration: none;
+            border-left: 10px solid rgb(254, 199, 1);
+            font-size: 13px;
+            padding: 3px;
+        }
+
+        .style-06 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(119, 226, 245);
+            text-decoration: none;
+            font-size: 13px;
+            border-left: 10px solid rgb(254, 199, 1);
+            padding: 3px 0px 3px 5px;
+        }
+
+        .style-07 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(119, 226, 245);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 5px 3px 0px;
+        }
+
+        .style-08 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(211, 157, 0);
+            text-decoration: none;
+            border-left: 10px solid rgb(254, 199, 1);
+            font-size: 13px;
+            text-shadow: rgb(244, 204, 46) 0.5px 0px 0px, rgb(244, 204, 46) -0.5px 0px 0px, rgb(244, 204, 46) 0px 0.5px 0px, rgb(244, 204, 46) 0px -0.5px 0px;
+            font-weight: bold;
+            padding: 3px 5px;
+        }
+
+        .style-09 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(211, 157, 0);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 0px 3px;
+            text-shadow: rgb(244, 204, 46) 0.5px 0px 0px, rgb(244, 204, 46) -0.5px 0px 0px, rgb(244, 204, 46) 0px 0.5px 0px, rgb(244, 204, 46) 0px -0.5px 0px;
+            font-weight: bold;
+        }
+
+        .style-10 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(211, 157, 0);
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 0px;
+            text-shadow: rgb(244, 204, 46) 0.5px 0px 0px, rgb(244, 204, 46) -0.5px 0px 0px, rgb(244, 204, 46) 0px 0.5px 0px, rgb(244, 204, 46) 0px -0.5px 0px;
+            font-weight: bold;
+        }
+
+        .style-11 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(211, 157, 0);
+            text-decoration: none;
+            font-size: 13px;
+            text-shadow: rgb(244, 204, 46) 0.5px 0px 0px, rgb(244, 204, 46) -0.5px 0px 0px, rgb(244, 204, 46) 0px 0.5px 0px, rgb(244, 204, 46) 0px -0.5px 0px;
+            font-weight: bold;
+            padding: 3px 0px;
+        }
+
+        .style-12 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: rgb(211, 157, 0);
+            text-decoration: none;
+            font-size: 13px;
+            text-shadow: rgb(244, 204, 46) 0.5px 0px 0px, rgb(244, 204, 46) -0.5px 0px 0px, rgb(244, 204, 46) 0px 0.5px 0px, rgb(244, 204, 46) 0px -0.5px 0px;
+            font-weight: bold;
+            padding: 3px 5px 3px 0px;
+        }
+
+        .style-13 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: white;
+            text-decoration: none;
+            border-left: 10px solid rgb(254, 199, 1);
+            font-size: 13px;
+            padding: 3px 0px 3px 3px;
+        }
+
+        .style-14 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: white;
+            text-decoration: none;
+            border-left: 10px solid rgb(254, 199, 1);
+            font-size: 13px;
+            padding: 3px 5px;
+        }
+
+        .style-15 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: white;
+            text-decoration: none;
+            border-left: 10px solid rgb(254, 199, 1);
+            font-size: 13px;
+            padding: 3px;
+        }
+
+        .style-16 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            border-left: 10px solid rgb(254, 199, 1);
+            padding: 3px 0px 3px 5px;
+        }
+
+        .style-17 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 3px 3px 0px;
+        }
+
+        .style-18 {
+            box-sizing: content-box;
+            background: rgb(58, 56, 49);
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+            padding: 3px 5px 3px 0px;
+        }
+
+        .style-19 {
+            box-sizing: content-box;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: block;
+            line-height: 1.3;
+            padding: 5px 25px;
+        }
+
+        .style-20 {
+            box-sizing: content-box;
+            background-color: rgb(225, 225, 225);
+            height: 2px;
+            margin-bottom: 7px;
+            margin-left: -15px;
+            margin-right: -12px;
+        }
+
+        .style-21 {
+            box-sizing: content-box;
+            background-color: rgb(225, 225, 225);
+            height: 2px;
+            margin-bottom: 7px;
+            margin-left: -45px;
+            margin-right: -12px;
+        }
+
+        .style-22 {
+            box-sizing: content-box;
+            background-color: transparent;
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            line-height: 1.5;
+            padding: 0px 25px;
+            margin: 0px 0px 5px;
+        }
+
+        .style-23 {
+            box-sizing: content-box;
+            background-color: transparent;
+            color: rgb(135, 189, 0);
+            text-decoration: none;
+            font-style: normal;
+        }
+
+        .style-24 {
+            box-sizing: content-box;
+            background-color: transparent;
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .style-25 {
+            box-sizing: content-box;
+            background-color: transparent;
+            color: rgb(51, 51, 51);
+            text-decoration: none;
+            font-style: normal;
+        }
+
+        .style-26 {
+            box-sizing: content-box;
+            border: 0px;
+            vertical-align: middle;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .style-27 {
+            box-sizing: content-box;
+            border: 0px;
+            vertical-align: middle;
+            max-width: 28px;
+            height: auto;
+            max-height: 28px;
+        }
+
+        .style-28 {
+            box-sizing: content-box;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            background: rgb(255, 255, 255);
+            border: 1px solid black;
+            color: black;
+        }
+
+        .style-29 {
+            box-sizing: content-box;
+            font-weight: bold;
+            position: relative;
+            left: -5px;
+        }
+
+        .style-30 {
+            box-sizing: content-box;
+            padding: 2px;
+            border-bottom: 1px solid black;
+            font-weight: bold;
+        }
+
+        .style-31 {
+            box-sizing: content-box;
+            padding: 2px;
+            border-bottom: 1px solid black;
+            text-align: center;
+        }
+
+        .style-32 {
+            box-sizing: content-box;
+            padding: 2px;
+            border-bottom: 1px solid black;
+            text-align: center;
+            background: darkgreen;
+        }
+
+        .style-33 {
+            box-sizing: content-box;
+            padding: 2px;
+            color: white;
+            text-align: center;
+            background: black;
+            font-weight: bold;
+            border: 1px solid black;
+            line-height: 1.6em;
+        }
+
+        .style-34 {
+            box-sizing: content-box;
+            padding-left: 15px;
+            padding-right: 16px;
+            padding-bottom: 7px;
+            background-color: black;
+            position: relative;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font-family: "Proxima Nova", ProximaNova-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 13.65px;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            letter-spacing: normal;
+            orphans: 2;
+            text-indent: 0px;
+            text-transform: none;
+            widows: 2;
+            word-spacing: 0px;
+            -webkit-text-stroke-width: 0px;
+            white-space: normal;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+        }
+
+        .style-35 {
+            box-sizing: content-box;
+            padding-left: 15px;
+            padding-right: 16px;
+            padding-bottom: 7px;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            font-family: "Proxima Nova", ProximaNova-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 13.65px;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            letter-spacing: normal;
+            orphans: 2;
+            text-indent: 0px;
+            text-transform: none;
+            widows: 2;
+            word-spacing: 0px;
+            -webkit-text-stroke-width: 0px;
+            white-space: normal;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+        }
+
+        .style-36 {
+            box-sizing: content-box;
+            padding-left: 45px;
+            padding-right: 16px;
+            padding-bottom: 7px;
+            background-color: rgb(241, 241, 241);
+            position: relative;
+            color: rgb(51, 51, 51);
+            font-family: "Proxima Nova", ProximaNova-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            font-size: 13.65px;
+            font-style: normal;
+            font-variant-ligatures: normal;
+            font-variant-caps: normal;
+            font-weight: 400;
+            letter-spacing: normal;
+            orphans: 2;
+            text-align: start;
+            text-indent: 0px;
+            text-transform: none;
+            widows: 2;
+            word-spacing: 0px;
+            -webkit-text-stroke-width: 0px;
+            white-space: normal;
+            text-decoration-thickness: initial;
+            text-decoration-style: initial;
+            text-decoration-color: initial;
+        }
+
+        .style-37 {
+            box-sizing: content-box;
+            position: absolute;
+            top: 4px;
+            left: 5px;
+            width: 28px;
+        }
+
+        .style-38 {
+            max-width: 800px;
+            justify-self: center;
+        }
+    </style>
+</head>
+<body>
+<div class="content style-38">
+    <div class="message desc style-35" data-messageid="-OrTMpAivpSDyz7MIzz5">
+        <div class="spacer style-20"></div>
+        <a class="style-25">───────</a><span>&nbsp;</span><a class="style-23">✷</a><span>&nbsp;</span><a
+            class="style-25">───────</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTNo3Sf79yfwfpbpdS">
+        <div class="spacer style-20"></div>
+        <a class="style-24">Call of Cthulhu 7th</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTPsJ_IIdNpwvwJIXg">
+        <div class="spacer style-20"></div>
+        <img class="style-26" draggable="false"
+             src="https://cdn.phototourl.com/free/2026-04-30-95476a85-6cb7-4737-abf6-63bd68b83b0e.png">
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTQq8KOcd-CccrRlWC">
+        <div class="spacer style-20"></div>
+        <a class="style-23">[KPC] 히나타 하지메</a><span>&nbsp;</span><a class="style-25"> - 쓰래기</a>　<a
+            class="style-23">[PC] 코마에다 나기토</a><span>&nbsp;</span><a class="style-25"> - 레타</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTR0KlxWKHiuE_ssHe">
+        <div class="spacer style-20"></div>
+        <a class="style-23">Written by</a><span>&nbsp;</span><a class="style-25">슈가띠니</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTRGkUv-H51Wq9RuiJ">
+        <div class="spacer style-20"></div>
+        <a class="style-24">2026.04.30</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTRM3___-vSCiTUaib">
+        <div class="spacer style-20"></div>
+        <a class="style-25">───────</a><span>&nbsp;</span><a class="style-23">✷</a><span>&nbsp;</span><a
+            class="style-25">───────</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTS6Y1VVGNIXSaKqCF">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37"></div>
+        <span class="by style-29"></span><a class="style-22">당신은 잊지 못하는 과거가 있나요?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTSDqsh9ksI9p-Z9xa">
+        <a class="style-22">후회하는 것이 있나요?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTSIY8KVEi2mNfj6Uw">
+        <a class="style-22">이곳은, 당신에게 주어진 면죄부.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTSOdbxFcIUN1wzFAs">
+        <a class="style-22">당신에게 주어진 기회입니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTSfEUczm46_p9mn1r">
+        <div class="spacer style-20"></div>
+        <a class="style-24">언제 잠들었던 걸까요. 눈을 떠보면 이 곳은 투명한 방.유리로 된 투명한 방 안에, 당신 혼자 갇혀있습니다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTaw6FFu6_8Kf3Y0ZR">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-15">···어라.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTaw6NjRKCxLDiP7uh">
+        <a class="style-05">어딜까, 여긴?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTaw6UgCsUeuK-UmVs">
+        <a class="style-05">프로그램에서 후 섬의 병실에서만 지내고 있었는데,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTaw6Zl4HpHrRBq2fA">
+        <a class="style-05">자는 사이에 어딘가로 격리되기라도 한 걸까.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTb6Vg2gvSEvrdqlxQ">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37"></div>
+        <span class="by style-29"></span><a class="style-22">끼이익</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTbGWW5SCLZc6WZzi8">
+        <div class="spacer style-20"></div>
+        <a class="style-24">유리 너머의 공간에 보이는 검은 문이 열립니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTbrOf5Y6LoTFwdvtK">
+        <div class="spacer style-20"></div>
+        <a class="style-24">들어오는 자는 히나타 하지메.히나타는 당신과 눈을 맞춥니다.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTcLP1pNKtBthcBomz">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-22">"코마에다-"</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTc_NQSirU6-Rn1wdd">
+        <div class="spacer style-20"></div>
+        <a class="style-24">히나타는 당신에게 인사를 건네며 열쇠를 보여줍니다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTeHJ8ng-CN6GpvUTL">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span>
+        <a class="style-15">아, 히나타 군.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTeHJDzKdsJ8cbAxtp">
+        <a class="style-15">···그건 이 방 열쇠일까?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTeHJDzKdsJ8cbAxtp">
+        <a class="style-15">그보다··· 어제 분명 평소대로 병실에서 잠들었는데,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTeHJI4Q3mp3-5eCJ3">
+        <a class="style-15">이런 곳에 있게 된 이유를 알고 싶어.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTeHJM6JpsFUTMZDCc">
+        <a class="style-15">히나타 군은 알고 있으려나?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTgklL4RXG2o1n5bbI">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span>(곤란한 표정을 지으며 잠시 침묵했다가 입을 열기 시작한다.)
+    </div>
+    <div class="message general style-36" data-messageid="-OrThTdfUf7LeK86A81O">
+        <a class="style-13">우선.... 여긴,</a><a class="style-09"> 고해의 방</a><a class="style-17">이야. 자세한건 말해주기 어렵지만,</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrThVjn1jL3T0LBkgq_">
+        (손에 들고있는열쇠를 들어올리며)
+    </div>
+    <div class="message general style-36" data-messageid="-OrThmmSSvrVPp7MeD2a">
+        <a class="style-13">네 쪽의 유리방에서</a><a class="style-09"> 열쇠</a><a class="style-17">를 찾으면 너는 언제든지 여기서 벗어날 수 있어. 그
+        다음에는 너는 원래 있던 곳에.... 돌아갈 수 있을거야.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTjULWkgepH1M-7eCU">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-15">헤에···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTjULeW-PDsglg8dJj">
+        <a class="style-15">알려줘서 고마워. 내가 물은 건 이유 쪽이었지만 말이야!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTjULjDzqSQhkcjehF">
+        <a class="style-15">그런 걸 알고 있단 건, 날 여기 가둔 건 히나타 군이겠지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTjULoHXQb3S35gfCM">
+        <a class="style-15">직접은 아니라도, 관여하고 있는 건 확실하겠지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTjULt2VmpkhhJHNcy">
+        <a class="style-15">저기, 일부러 가둬놓고 나가는 방법까지 알려 주다니, 이상하다고 생각되는데···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTjULy4XTTNIhhUsEV">
+        <a class="style-15">어째서 이런 짓을 하는 거야?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTlUMB_V4rcbB0Tdpw">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-13">...........내가<span>&nbsp;</span></a><a
+            class="style-09">관여</a><a class="style-17">했다고 하기에는 어렵겠네. 이 사태의 모든 의의는 이 방의 이름에서 알 수 있어.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrToL87LAV3DSvarJ5j">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-05">관여하지 않았는데, 어떻게 내가 있는 방에 열쇠가 있다느니 하는 걸 알고 있는
+        걸까?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrToL8FigkMkbbaQBiV">
+        <a class="style-05">굳이 거짓말을 하긴 이상한 부분이니,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrToL8L25vrhFkDCXDD">
+        <a class="style-05">믿을 수밖에 없겠지!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrToL8RqTmR--iv-ApN">
+        <a class="style-13">···</a><a class="style-10">"고해의 방"</a><a class="style-17">이라면, 고해성사라도 하라는 걸까?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrToWoargY7hP-9ciqA">
+        <a class="style-15">그런데 열쇠 같은 걸 준비해 뒀다는 건,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrToWogfVejtopGybdP">
+        <a class="style-15">원하지 않으면 하지 않아도 괜찮다는 거야?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTpdff4lPP7MZ-Kn9s">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-15">글쎄, 방을 둘러봐.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTpzjUzLHv40y8k7bt">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-05">히나타 군의 말에 따라, 방을 둘러보았다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTq4x6Vaf2PhRQGDNy">
+        <div class="sheet-rolltemplate-coc-1 style-01">
+            <table class="style-28">
+                <caption class="style-33">
+                    관찰력
+                </caption>
+                <tbody class="style-01">
+                <tr class="style-01">
+                    <td class="sheet-template_label style-30" data-i18n="value">
+                        기준치:
+                    </td>
+                    <td class="sheet-template_value style-31">
+                        <span class="inlinerollresult showtip tipsy-n-right style-03" title="Rolling 70 = 70">70</span>/<span
+                            class="inlinerollresult showtip tipsy-n-right style-03"
+                            title="Rolling floor(70/2) = floor(70/2)">35</span>/<span
+                            class="inlinerollresult showtip tipsy-n-right style-03"
+                            title="Rolling floor(70/5) = floor(70/5)">14</span>
+                    </td>
+                </tr>
+                <tr class="style-01">
+                    <td class="sheet-template_label style-30" data-i18n="rolled">
+                        굴림:
+                    </td>
+                    <td class="sheet-template_value style-31">
+                        <span class="inlinerollresult showtip tipsy-n-right style-03"
+                              title="Rolling 1d100cs1cf100 = (&lt;span class=&quot;basicdiceroll&quot;&gt;36&lt;/span&gt;)">36</span>
+                    </td>
+                </tr>
+                <tr class="style-02">
+                    <td class="sheet-template_label style-30" data-i18n="result">
+                        판정결과:
+                    </td>
+                    <td class="sheet-template_value style-32" data-i18n="success">
+                        보통 성공
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTqHJzwd_T0SZxrNqX">
+        <div class="spacer style-20"></div>
+        <a class="style-24">방 안에서 십자가를 발견했습니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTqOZuaBfBYDwsWQz3">
+        <div class="spacer style-20"></div>
+        <a class="style-24">어쩐지, 이것이 열쇠가 되어 줄 것만 같습니다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTrG8HcE6AGMib4bdd">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-05">방을 둘러보니 십자가 같은 게 보여, 그것을 집어들어 살펴보았다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrTrtB_Xy3tigQGNVZz">
+        <div class="spacer style-20"></div>
+        <a class="style-24">히나타가 들고있던 열쇠와 같은 색을 띄고 있는 십자가입니다. 딱히 이 방 안의 어딘가에는 쓸 수 없을 것 같습니다</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTuDVRtUsnEYVI5EQO">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-13">코마에다, 너는 지금까지 네가 보낸 날들 중에서<span>&nbsp;</span></a><a
+            class="style-09">후회</a><a class="style-17"><span>&nbsp;</span>때문에 다시 그때, 그 순간으로 되돌아 가고 싶은 적이 있어?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrTuFtW3YSm-cpNW6oJ">
+        (평소라면 이렇게 그에 대해서 직접적으로 질문을 던졌을 리는 없었을텐데, 지금의 그는 코마에다와 함께 한 그 어느떄보다도 거리낌이 없었다. 마치 그에 대한 모든걸 이미 알고 묻는 듯한 느낌도 든다.)
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTyAzeAOnT5vk_k0mR">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-15">···히나타 군, 진짜로 고해성사라도 시킬 생각이야?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTyAzmitM3bs-dooSy">
+        <a class="style-15">그다지 하고 싶지 않은데···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTyAzt2eL_Cd4eRGAM">
+        <a class="style-15">그보다 이 십자가, 방금 히나타 군이 보여준 열쇠와 같은 색인데···</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTyAzx4lQug2_ygGPV">
+        <a class="style-15">이걸 쥐고 고해성사를 하라고 넣어둔 게 아니라면, 이게 열쇠인 걸까나?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrTyB-0IKUVzLLYRevO">
+        <a class="style-15">아, 아니면 혹시 둘 다 정답이라, 이걸 쥐고 고해성사를 하는 것이 나가기 위한 열쇠가 된다던가 하는 거야?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrULRXtzhOVgPyZxhN6">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-15">응, 맞아. 그렇게 되면 이제 고해성사 할 마음이 드냐? ......지금 내가 여기있는
+        이유도 그걸 위해서 있는거니까.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYsgkQJt9yE52G-dLf">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">아핫, 글쎄?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYsgkZURdZGhCsW_j0">
+        <a class="style-14">여기에 갇혀 굶어 죽는 것도 별로 상관 없지만,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYsgkenPfrnr6Q8uNC">
+        <a class="style-14">모처럼 구해진 목숨을 낭비하는 것도 좀 그러니까,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYsgkitDYYQ7wEuY6X">
+        <a class="style-14">어울려 주도록 할게.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYtjgRwmvCp0a6hbtV">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span>(머리를 짚으며 작게 한숨을 쉬다가 고개를 들어 쓴웃음을 짓는다.)
+    </div>
+    <div class="message general style-36" data-messageid="-OrYtrqMVMj-vfeTma-D">
+        <a class="style-14">이제서야 어울려주는거냐....... 그래, 그럼 다시 물을게.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYuWbYx1i_zZGXjrjx">
+        <a class="style-14">코마에다,</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYuWcA59C3hsiQsVMX">
+        <a class="style-14">너는 지금까지 네가 보낸 날들 중에서</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYuWcVOeJ9uhdTr6Dr">
+        <a class="style-08">후회 때문에 다시 그때, 그 순간으로 되돌아가고 싶은 적이 있어?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYuzPqffpE54Hwa5gb">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">··· ··· ··· ··· ··· ···</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYuzPx6L77pUBm8tkQ">
+        <a class="style-14">ーー아핫,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYuzQ2_3fmzEftSBF7">
+        <a class="style-14">나한테 그런 걸 묻는거야?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYy2c1Ki2f7b590h2z">
+        <a class="style-14">히나타 군도 정말 짓궂네···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYy2c8xGVrnxdZ6-F6">
+        <a class="style-14">선택을 되돌리고 싶은 순간이야 셀 수 없이 많을 지도 모르겠지만···</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYy2cEwJ1c1Lyr8yTi">
+        <a class="style-16">그런 짓을 했다간 그 뒤의<span>&nbsp;</span></a><a class="style-11">행운</a><a class="style-18">도 없었던 일이
+        되잖아?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrYy2cKDJhGYNI-3XwT">
+        <a class="style-14">후회 같은 걸 했다간, 그 행운이 속상해 할 거야.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYzTwZErBiyDb0dloN">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span>(대화가 처음으로 돌아간 듯한 기분에 미간이 저절로 좁혀진다.)
+    </div>
+    <div class="message general style-36" data-messageid="-OrYzie1iBqe0S4-rYym">
+        <a class="style-14">하....... 그래, 이제는 뒤에 올 불행 때문에 그 행운도 온전히 즐기지 못하는 입장에서도</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYzieY7cA4g2NmpJTF">
+        <a class="style-14">그런 말이 나오는구나.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrYzugkSgoO4f_A7vhm">
+        <a class="style-16">그래도 있을거 아니야? 그럼에도<span>&nbsp;</span></a><a class="style-12">정말 후회했던 순간이.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txZCGvq4bIIOuUO">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">하아···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txfB6BgxlAdcc12">
+        <a class="style-14">저기, 히나타 군.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txj6e3nEpghm2fW">
+        <a class="style-14">그런 식으로 말하면,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txp9z27xyE6bcZq">
+        <a class="style-16">마치<span>&nbsp;</span></a><a class="style-11">후회해라</a><a class="style-18"><span>&nbsp;</span>라고
+        말하는 것 같이 들리는데 말이야···?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txuFlUiyEJZP2m1">
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txuFlUiyEJZP2m1">
+        <a class="style-14">그런 걸까? 저기, 쓰레기 같은 나는 후회하지 않으면 안 되는 거지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txzaAdGkxvmREI-">
+        <a class="style-14">역시 히나타 군도 그렇게 생각하는 거지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txuFlUiyEJZP2m1">
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1ty3mIc2nYr0lf1a">
+        <a class="style-14">비행기에서 부모님이 돌아가신 것도,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1ty8zOfzAL6B7Vzh">
+        <a class="style-14">키우던 강아지가 죽은 것도,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyChXZ5RRjCCtnm">
+        <a class="style-14">살인범에게 납치 당했던 것도,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyHklt_lKf3Iso-">
+        <a class="style-14">전부ー전부 내 탓이고,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyMy1bc_6LtEIUU">
+        <a class="style-14">나는 그걸 후회하지 않으면 안 되는 거지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txuFlUiyEJZP2m1">
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyOoilyMjNbf4V6">
+        <a class="style-14">재능 같은 걸 가지고 태어난 걸, 후회하지 않으면 안 되는 거지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyRkNiDfRZBtJ23">
+        <a class="style-14">아니면, 태어난 것 자체를, 후회해야 하는 거지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txuFlUiyEJZP2m1">
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyTMF41BTzMeExp">
+        <a class="style-14">그렇다면 어째서, 프로그램에서 나를 깨운 거야?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyV4wi1ASE75C7Y">
+        <a class="style-14">저기, 히나타 군, 어째서야?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1tyXtYlWDtnu9xJQ">
+        <a class="style-14">그대로 잠든 채로 놔두는 편이 좋았을 텐데 어째서야?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ3pgtAd0aX-S_DgLA">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span>(당황해서 몸이 순간적으로 굳는다. 조금의 죄책감이 담긴 것 같은 눈동자를 그와 마주치지 않은 채로 입을 연다.)
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ3v9mOVvD55jB_8Av">
+        <a class="style-14">.............. 미안</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ40zPjWBLxhL3SATC">
+        <a class="style-14">너무 몰아갔을지도 모르겠다.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ40zb08F15XcSV7kL">
+        <a class="style-14">... 하지만, 비로소 이야기 하기 시작했네</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ5SjTv8lNuiAhg78P">
+        <a class="style-16">괴로워보이니까 말해주는건데, 사실<span>&nbsp;</span></a><a class="style-11">고해</a><a class="style-18">는 필수가
+        아니야.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ5Sjhs3_6TdZwxJBG">
+        <a class="style-14">내가 여기 있는 이유는 그걸 들어주기 위해서지만, 단지 그것 뿐. 네 죄를 심판할 수는 없어.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ5Sjs-Qm1eDVrQikc">
+        <a class="style-14">그리고 너가 오늘 말한 걸 나는 기억하지 못할거야. 그러니까, 그 모든 일들을 편하게 이야기 해도 괜찮아. 아, 그냥... 포기해도 되지만.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YO321MqA-lJQFiB">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-04">···히나타 군이 기억하지 못하게 되는 거라면,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YOC3_ii1x1VjtvZ">
+        <a class="style-04">말하고 싶은 것이 있다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YOHkmaTngVbDfyl">
+        <a class="style-14">···</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YOMFUGA0JCW_Jgj">
+        <a class="style-04">말하려니 입이 잘 떨어지지 않는다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YOR6-16XFo9RcmU">
+        <a class="style-04">하지만, 히나타 군의 반응이 보고 싶으니 말하고 싶어.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YOWWvlAXJY9nXE7">
+        <a class="style-14">나는··· 네게 친구 이상의 마음을 품게 된 것을,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ8YO_jrxHfmNPiyak">
+        <a class="style-14">후회하고 있어.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ9j7BEw7JwGDhCggd">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">뭐.............?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ9ncWR_9yvOsCjOp3">
+        (정적이 유리방을 감싼다. 그 침묵이 흐르는 만큼 동시에
+    </div>
+    <div class="message general style-36" data-messageid="-OrZ9ncnbcRsSLLfRWBf">
+        부끄러움에 얼굴이 붉어진다. 이런걸 히나타는 예상하지 못했던 것 같다.)
+    </div>
+    <div class="message general style-36" data-messageid="-OrZBC935hKW-iDaNNQT">
+        <a class="style-14">설마 오늘 일을 기억하지 못할거라고 하니까 바로.... 이런걸 고백하는거냐?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZBC9Pq-AGmKsVneg3">
+        <a class="style-14">야, 오늘 일을 기억하지 못한다고 했지, 지금 이 순간의 나는 다 기억하고 그에 대한 것도 생각 할 수 있다고.........!</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZBESsXJZG4sPZgKMo">
+        (금방이라도 터질 것 같은 얼굴을 한 손으로 가리고 간신히 말을 뱉어낸다.)
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3pdn69_-usQYt2r">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">어라, 히나타 군, 지금 부끄러워 하는 거야?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3pn9ajPPnW67gJU">
+        <a class="style-14">의외네···!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3ptfFR6MMeQYLvx">
+        <a class="style-14">나 같은 게 좋아한다고 하면 불쾌해 할 줄 알았는데 말이야!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3pyNofNkq-wvq6d">
+        <a class="style-14">아니면, 부끄러운 것과는 별개로 불쾌할 수도 있는 걸까?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZ1txuFlUiyEJZP2m1">
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3q3EkytNP92dY_O">
+        <a class="style-14">일단 대답하자면, 그래, 이 순간의 히나타 군의 반응이 보고 싶어서 말한 거야!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3q7HF4Gj8EDxs6g">
+        <a class="style-14">원래는 이런 추한 감정을 드러낼 생각은 없었지만···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3qCNag1CsOz9SyP">
+        <a class="style-14">어차피 기억하지 못하게 될 거라면,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3qIiz0mZXE7RCiY">
+        <a class="style-14">상관 없겠지 싶어서 말이지!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZD3qMB7SmqXY3bJym">
+        <a class="style-14">불쾌했다면, 사과할게?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZEJZe9EEBGIyjT8DH">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">하...... 불쾌 할 리가 없잖아. 오히려 싫은건.... 이런건, 고해 할 게 아니잖아.
+        코마에다.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZELV-Ob216jB5YWxz">
+        (쓴웃음을 지은 얼굴로 한발짝 유리벽에 다가가서 손을 맞댄다. 마치 그를 어루만지듯이. 어쩌면 그 손짓은 동정을 담고 있는 것 같기도 하다.)
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZGGiyk_0RXxfJY9M2">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">어라, 고해할 게 아니라니, 어째서?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZGGj9ELdGVop7t7wV">
+        <a class="style-14">용서해 줄 수 없기 때문일까?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZGGjFHG5ufGE5IB-G">
+        <a class="style-14">아아, 역시···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZGGjL_xFugXOq3pve">
+        <a class="style-14">의식을 되찾아 주기까지 한,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZGGjQAejmhIxeKvWC">
+        <a class="style-14">생명의 은인이나 마찬가지인 친구에게 이런 감정을 가지는 건,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZGGjWTg9DPfSHHAQA">
+        <a class="style-14">용서받지 못할 일이겠지···.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZHWQpD9JvSs4nSK_r">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">아니, 그런게 아니라! 잘못으로 여길 게 아니지 않냐는 뜻이었어...</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZHWRPbFL_C7ka5BMY">
+        <a class="style-16">그리고<span>&nbsp;</span></a><a class="style-11">지금의 나</a><a class="style-18">는 네게
+        아무것도...............</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZIGsvcBLVsj8FT3rg">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">에, 아무것도, 뭐···?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZIGt5xp6oU5bHaog7">
+        <a class="style-14">잘못이 아니라니, 상냥하네, 히나타 군···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZIGtC4uczBh0MH6Rn">
+        <a class="style-14">나 같은 쓰레기 이하에게 그런 식으로 말하면, 곤란한데.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZIGtI-G3WZgjM3HnJ">
+        <a class="style-14">이 이상 좋아하게 되고 싶지 않은데 말이야.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZJQSCCfOYlY0R_vRd">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">코마에다, 그런 일은 후회하지마.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZJQSPqghyZsPG-Arf">
+        <a class="style-16">여길 나가서도 솔직하게 마음을 전하면,<span>&nbsp;</span></a><a class="style-11">그곳의 나</a><a
+            class="style-18">도 분명 기쁘게 받아줄거야.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZJojNYKDtGdfLc6G8">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">ーーー!!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZJojWII-YCXZSf8Rz">
+        <a class="style-14">받아 준다는 건, 혹시, 사귀어 준다는 의미일까···?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZKY6OwRgNIuIVIY2C">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">아아....... 응. 그런 의미지..</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZK_GMac7oarTmUBo9">
+        (숙쓰러운 듯 시선을 돌리며 이야기하다, 조심스럽게 시선을 마주치며)
+    </div>
+    <div class="message general style-36" data-messageid="-OrZKcjLrxwyfoUskLSI">
+        <a class="style-14">이제 마음을 전할 용기가 좀 생겨?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZLhPqlxWbt5yRj05_">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">···으···으으으읏···!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZLhPzr5zoNuzKkaJi">
+        <a class="style-14">히, 히나타 군이 나와 사귀어 준다니,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZLhQ8_A5x-kUdFGpD">
+        <a class="style-14">그런 황송한 일, 버틸 수 있을 리 없어···!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZLhQDUVicd5H6YP1q">
+        <a class="style-14">그 정도 큰 행운이라면,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZLhQMxLI0aOVcdVyb">
+        <a class="style-14">얼마나 큰 불행을 대가로 해야 할지 오히려 무섭다구······!</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZMd--4sVf2vJXkh_E">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">그정도는 별거 아니잖아....! 물론 나한테는 감사한 일이고, 너가 무서워하는 것도 이해가
+        가지만.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZMgpGtPFjiEBORr7u">
+        <a class="style-14">행운도 불행도 마음가짐에 따라 그 크기가 달라지는거니까.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZNRFvAb-txQwuNhhu">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">하지만, 히나타 군이 나와 사귀어 주는 걸</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZNRG1MrY1HqA-CmkE">
+        <a class="style-14">나는 도저히 별거 아니라고 생각할 수 없어!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZNRG7u3o9BAjfW6Da">
+        <a class="style-14">지금 이런 말을 듣고 있는 게 행운이고,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZNRGCtzmWgx2DI0uW">
+        <a class="style-14">나가게 된다면 전부 없었던 일처럼,</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZNRGGbtZodAq4hr0E">
+        <a class="style-14">실제로 고백했을 땐 차이는 불행이라도 겪을 것 같다구!</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZOILfdNSYC9dxufV4">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">하...... 걱정 많은건 변함 없네.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZOILtfqtyl9zreFNm">
+        <a class="style-14">좋아하는게 문제가 아니라 오히려 그런 점을 후회하란 말이야!</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZOJxvo1tPTS_kJzKi">
+        (얼떨떨하게 웃다가 되려 호통을 친다.)
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZPQh_USEPNObyIxdx">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">윽···!</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZPQhhrYit0mvj17Z6">
+        <a class="style-14">하지만, 어쩔 수 없잖아···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZPQhmSnhchyVhKnyj">
+        <a class="style-14">고해성사는, 이걸로 끝내도 괜찮을까···?</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZR4bMXQA2Q7YWlc1H">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267101/Yjy9jjNRWE7QbshW99tNFQ/med.png?1777553972">
+        </div>
+        <span class="by style-29">히나타 하지메:</span><a class="style-14">이런 말도 안되는 고해성사를 끝내고 싶으면....</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZR7gvwNUK3u1e86cv">
+        (둘 사이를 나누는 유리벽 사이에 뚫린 작은 구멍으로 손을 내민다.)
+    </div>
+    <div class="message general style-36" data-messageid="-OrZS6LO1anPtXlWVrI7">
+        <a class="style-14">약속 하나만 해줘. 누군가를 좋아하는 마음으로 스스로를 더이상 자책하지마.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZSDXQzha1kfiCdD4V">
+        <a class="style-14">그리고 이 방 밖에서의 나에게도 꼭 솔직한 마음을 들려줘.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZSyL4ZOEdJ3G6XWEx">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-14">웃···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZSyLDFxNr0RCxBcQG">
+        <a class="style-04">망설이다, 손을 잡았다.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZSyLJ-MamaKTz2Vm4">
+        <a class="style-04">잡은 히나타 군의 손은 따뜻해서···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZSyLNP6NrIQ3uvtFf">
+        <a class="style-04">언제까지고 놓지 않고, 이대로 있고 싶을 정도였다···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZSyLS0kIIdKf4JPec">
+        <a class="style-14">···노력해 볼게.</a>
+    </div>
+    <div class="message general style-36" data-messageid="-OrZTH5U_sImDvCyYk2i">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37"></div>
+        <span class="by style-29"></span><a class="style-22">톡톡,</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZTQIg9WFmIC0DEibe">
+        <div class="spacer style-20"></div>
+        <a class="style-24">히나타가 십자가를 가리킵니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZTVek5cHzoKYUJ1bM">
+        <div class="spacer style-20"></div>
+        <a class="style-24">언제 변한 것일까요.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZT_SPlJWiuD5PX7s9">
+        <div class="spacer style-20"></div>
+        <a class="style-24">십자가 였던 그것은 어느새 열쇠가 되어있습니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZTj-CxkpKdHj5q_xU">
+        <div class="spacer style-20"></div>
+        <a class="style-24">이제 나갈 수 있습니다.</a>
+    </div>
+    <div class="message desc style-34" data-messageid="-OrZTxH-7138tv2IzGTC">
+        <div class="spacer style-20"></div>
+        <a class="style-19">당신은, 이 곳을 나갈 것인가요?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZUzPkZ4piOm7Yi4x-">
+        <div class="spacer style-21"></div>
+        <div aria-hidden="true" class="avatar style-37">
+            <img class="style-27" src="https://files.d20.io/images/485267137/qVY5WJJ9ASSw7zfdSKzpSw/med.png?1777553999">
+        </div>
+        <span class="by style-29">코마에다 나기토:</span><a class="style-04">어느 틈에 변한 거지···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZUzPsLLb71G8iPOGt">
+        <a class="style-04">역시, 이런 비현실적인 상황은 꿈이라고 생각할 수밖에 없겠지?</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZUzPx68D4kbhebI5J">
+        <a class="style-06">하지만,<span>&nbsp;</span></a><a class="style-11">행복한 꿈</a><a class="style-07">이었어···.</a>
+    </div>
+    <div class="message general you style-36" data-messageid="-OrZUzQ19_DUbb25UquQ">
+        <a class="style-04">나는 열쇠를 들어, 문에 꽂아 넣고 돌렸다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZVezmva3ExWV03sok">
+        <div class="spacer style-20"></div>
+        <a class="style-24">당신은 고해의 방을 벗어나기로 합니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZVlEDkEAt5748H5z5">
+        <div class="spacer style-20"></div>
+        <a class="style-24">유리방에서 나와 문을 통해 세상으로 나아갑니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZVrG-XIIAvIL23IQ-">
+        <div class="spacer style-20"></div>
+        <a class="style-24">눈을 다시 감았다 뜨면 여긴 당신의 방입니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZVv7HpZoK10WHgGgS">
+        <div class="spacer style-20"></div>
+        <a class="style-24">유리방은 존재하지도 않았던 것처럼.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZVzgCcoiP2byZ3LDY">
+        <div class="spacer style-20"></div>
+        <a class="style-24">마치 꿈이었던 것 같은 기분입니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZW4DtVWDUloMCzP3V">
+        <div class="spacer style-20"></div>
+        <a class="style-24">하지만 기분은 뭔가 홀가분한 것 같습니다.</a>
+    </div>
+    <div class="message desc style-35" data-messageid="-OrZW8ck8eSV8nC_krQG">
+        <div class="spacer style-20"></div>
+        <a class="style-24">마음 한편을 채우던 고통이 느껴지지 않습니다.</a>
+    </div>
+</div>
+</body>
+</html>
